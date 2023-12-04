@@ -1,0 +1,156 @@
+
+ * {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: "Quicksand", sans-serif;
+  }
+  
+
+ .jumbotron {
+    font-size: 10px;
+    padding: 20px;
+    background-color: #853ef3;
+    text-align: center;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  
+  .icon-size{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    
+  }
+  
+  .icon-image {
+    width: 70px;
+    height: 70px;
+    align-items: center;
+    object-fit: cover;
+    object-position: center;
+    background-color: #FFFF;
+    border-radius: 100px;
+  }
+  
+  
+  .header {
+    display: inline;
+  }
+  
+  .card-parent {
+      display: flex;
+      gap: 20px;
+      justify-content: space-between;
+      align-items: center;
+      margin: 100px;
+  }
+  
+  .card-item {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    width: 12%;
+    border-radius: 20px;
+  }
+  
+  /* atur warna background */
+  .card-item-bg{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    height: 30%;
+    padding: 20px;
+  }
+  
+  .card-item:hover {
+    box-shadow: 0 12px 20px 0 rgba(205, 209, 228, 0.8); /* Efek bayangan saat hover */
+    transform: translateY(-5px) scale(1.02); 
+    }
+  
+  .card-item {
+      background-color: #5FD2F7;
+      color: aliceblue;
+      transition: transform 0.3s, box-shadow 0.3s; 
+  }
+  
+  .card-item:nth-child(2) {
+    background-color: #FF5428;
+    color: aliceblue;
+  }
+  
+  .card-item:nth-child(3){
+    background-color: #6176F7;
+    color: aliceblue;
+  }
+  
+  .card-item:nth-child(4){
+    background-color: #BB2525;
+    color: aliceblue;
+  }
+  
+  .card-item:nth-child(5){
+    background-color: #940B92;
+    color: aliceblue;
+  }
+  
+  .card-item:nth-child(6) {
+    background-color: #20B486;
+    color: aliceblue;
+  }
+  
+  .card-parent:nth-child(2) .card-item:nth-child(1){
+    background-color: #D67BFF;
+    color: aliceblue;
+  }
+  
+  .card-parent:nth-child(2) .card-item:nth-child(2){
+    background-color: #96B6C5;
+    color: aliceblue;
+  }
+  
+  .card-parent:nth-child(2) .card-item:nth-child(3){
+    background-color: #F8DE22;
+    color: aliceblue;
+  }
+  
+  .card-parent:nth-child(2) .card-item:nth-child(4){
+    background-color: #57375D;
+    color: aliceblue;
+  }
+  
+  .card-parent:nth-child(2) .card-item:nth-child(5){
+    background-color: #016A70;
+    color: aliceblue;
+  }
+  
+  .card-parent:nth-child(2) .card-item:nth-child(6){
+    background-color: #362FD9;
+    color: aliceblue;
+  }
+  
+    
+    img {
+      border-radius: 5px 5px 0 0;
+    }
+  
+  .text-card-items {
+      text-align: center;
+  }
+  
+  @media screen and (max-width: 1317px) {
+    .text-card-items{
+      font-size: 13px;
+    }
+  }
+
+  .main-header {
+    border-bottom: 1px solid #dee2e6;
+    z-index: 1034;
+  }

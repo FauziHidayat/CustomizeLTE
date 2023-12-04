@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap"
+      rel="stylesheet"/>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;600;700;900&family=Poppins:wght@400;600;700;900&family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/dist/css/login.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-container">
+          <img class="icon_gasra" src="/image/gasra_icon.png" alt="">
+          <p class="version">Version 2.0.1.2023</p>
+          <h2>Sistem Informasi CNE</h2>
+          <form action="#">
+            <div class="form-group">
+              <label for="username">Username:</label>
+              <input type="text" id="username" name="username" placeholder="Username">
+            </div>
+            <div class="form-group">
+              <label for="password">Password:</label>
+              <input type="password" id="password" name="password" placeholder="Password">
+              <span class="toggle-password">
+                <i class="fa fa-eye" aria-hidden="true"></i>
+              </span>
+              <div class="input-label-container">
+                <input type="checkbox" onclick="showPassword()" id="password">
+                <label for="password" class="show-password-label">Show Password</label>
+              </div>
+            </div>
+            <div class="form-group">
+                <button type="submit">Login</button>
+            </div>
+          </form>
+        </div>
+        <div class="image-container">
+          <div class="header-container">
+          </div>
+          <div class="opacity">
+            <div class="column-desc">
+              <img class="icon_cne" src="/image/gasra_cne.png" alt="">
+              <h2 class="desc-col2">PT CITRA NUSANTARA ENERGI</h2>
+            </div>
+          </div>
+        </div>
+        </div>
+    </div>
+        
+
+      <script>
+        function showPassword(){
+          var x = document.getElementById("password");
+          if (x.type === "password") {
+            x.type = "text";
+          } else {
+            x.type = "password";
+          }
+        }
+      </script>
+</body>
+</html>
